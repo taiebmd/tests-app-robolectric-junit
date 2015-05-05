@@ -1,17 +1,13 @@
 package com.blundell.tests;
 
-import android.view.View;
-
-import com.blundell.RobolectricGradleTestRunner;
-
+import org.junit.Assert;
 import org.junit.Test;
-import junit.framework.Assert;
 import org.junit.runner.RunWith;
-import org.robolectric.util.ActivityController;
+import org.robolectric.RobolectricTestRunner;
+import org.robolectric.annotation.Config;
 
-import static org.junit.Assert.assertEquals;
-
-@RunWith(RobolectricGradleTestRunner.class)
+@Config(emulateSdk = 18, reportSdk = 18)
+@RunWith(RobolectricTestRunner.class)
 public class MyAndroidClassTest {
 
     @Test
