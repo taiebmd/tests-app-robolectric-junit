@@ -21,7 +21,7 @@ public class MyAndroidClassTest {
         ActivityController.of(activity).attach().create();
 
         int visibility = activity.findViewById(R.id.my_hello_text_view).getVisibility();
-        Assert.assertNotNull(_activity);
+        Assert.assertNotNull(activity);
         /*assertEquals(visibility, View.VISIBLE);*/
     }
 }
