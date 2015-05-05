@@ -21,6 +21,7 @@ public class MyAndroidClassTest {
 
         int visibility = activity.findViewById(R.id.my_hello_text_view).getVisibility();
         assertEquals(visibility, View.VISIBLE);*/
+        
         assertEquals(true, true);
     }
 }
