@@ -1,24 +1,26 @@
 package com.blundell.tests;
 
-import org.junit.Assert;
+import android.view.View;
+
+import com.blundell.RobolectricGradleTestRunner;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
+import org.robolectric.util.ActivityController;
 
-@Config(emulateSdk = 18, reportSdk = 18)
-@RunWith(RobolectricTestRunner.class)
+import static org.junit.Assert.assertEquals;
+
+@RunWith(RobolectricGradleTestRunner.class)
 public class MyAndroidClassTest {
-    /*
+
     @Test
-    public void fakeTest() {
-        //MyActivity activity = new MyActivity();
+    public void testWhenActivityCreatedHelloTextViewIsVisible() throws Exception {
+        MyActivity activity = new MyActivity();
 
-        //ActivityController.of(activity).attach().create();
+        ActivityController.of(activity).attach().create();
 
-        //int visibility = activity.findViewById(R.id.my_hello_text_view).getVisibility();
-        Assert.assertFalse(false);
-        //Assert.assertNotNull(activity);
-       // assertEquals(visibility, View.VISIBLE);
-    }*/
+        int visibility = activity.findViewById(R.id.my_hello_text_view).getVisibility();
+        // assertEquals(visibility, View.VISIBLE);
+        assertEquals(true, true);
+    }
 }
