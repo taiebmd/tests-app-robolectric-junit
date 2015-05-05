@@ -11,7 +11,7 @@ import org.robolectric.annotation.Config;
 public class MyAndroidClassTest {
 
     @Test
-    public void testWhenActivityCreatedHelloTextViewIsVisible() throws Exception {
+    public void fakeTest() throws Exception {
         /*MyActivity activity = new MyActivity();
 
         ActivityController.of(activity).attach().create();
