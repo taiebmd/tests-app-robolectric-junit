@@ -15,14 +15,9 @@ public class MyAndroidClassTest {
 
     @Test
     public void testWhenActivityCreatedHelloTextViewIsVisible() throws Exception {
-       /* MyActivity activity = new MyActivity();
-
+        MyActivity activity = new MyActivity();
         ActivityController.of(activity).attach().create();
-
         int visibility = activity.findViewById(R.id.my_hello_text_view).getVisibility();
-        assertEquals(visibility, View.VISIBLE);*/
-        String str1 = new String ("abc");
-        String str2 = new String ("abc");
-        assertEquals(str1, str2);
+        assertEquals(visibility, View.VISIBLE);
     }
 }
